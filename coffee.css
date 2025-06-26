@@ -2,74 +2,19 @@
  .grid-container{
             display: grid;
         }
-        
+                            /* navbar */
         .firstone{
             column-span: 40px;
             
             color: azure;
             transition: 0.3s;
         }
-        
-        .bruce{
-            position: absolute;
-            top: 50%;
-              bottom:8px;
-              left: 60px;
-              font-size: 2rem;
-              transform: translateY(-50%);
-              padding: 20px;
-              
-
-        }
-        
-    .hero-btn:hover{
-     background-color: chocolate;
-       color: azure;
-         }
-
-            .hover-text{
-            display: flex;
-            justify-content: flex-end;
-             text-decoration: none;
-             gap: 20px;
-             margin-right: 1rem;
-             
-
-            }
-            .navbar{
+        .navbar{
                 display: grid;
                 grid-template-columns: auto 1fr;
                 align-items: center;
                 background-color: black;
             }
-            .hover-text a{
-                color: azure;
-                text-decoration: none;
-                
-
-            }
-            .hover-text a:hover{
-                color: chocolate;
-            }
-         .fa-solid{
-         
-         } 
-
-            .fa-solid:hover{
-                color: chocolate;
-            }
-        .p1{
-            color: rgb(241, 104, 12);
-            text-align: left;
-            position: absolute;
-            margin-top: 0px;
-        }
-
-        /* .p2{ 
-            color:rgb(199, 199, 199);
-            text-align: left;
-            font-size: 2rem
-        };*/
         .div1{
             display: flex;
             align-items: center;
@@ -80,6 +25,73 @@
             height: 40px;
             margin-left: 5px;
         }
+         .hover-text{
+            display: flex;
+            justify-content: flex-end;
+             text-decoration: none;
+             gap: 20px;
+             margin-right: 1rem;
+             
+
+            }
+         
+            .hover-text a{
+                color: azure;
+                text-decoration: none;
+                
+
+            }
+            .hover-text a:hover{
+                color: chocolate;
+            }
+            
+             .fa-solid{
+            justify-content: center;
+        }
+
+            .fa-solid:hover{
+                color: chocolate;
+            }
+            
+                                       /* HOME-PAGE */
+        .bruce{
+            position: absolute;
+            top: 50%;
+              bottom:8px;
+              left: 60px;
+              font-size: 2rem;
+              transform: translateY(-50%);
+              padding: 20px;
+        }
+         .button1{
+            background-color: black;
+            color: azure;
+            height: 30px;
+            width: 100px;
+        }
+
+        .button1:hover{
+            color: rgb(255, 255, 255);
+            background-color: chocolate;
+        }
+        
+         .hero-btn:hover{
+         background-color: chocolate;
+         color: azure;
+         }
+
+        /* .p1{
+            color: rgb(241, 104, 12);
+            text-align: left;
+            position: absolute;
+            margin-top: 0px;
+        } */
+        
+       
+        
+
+                                         /* ABOUT US */
+
         .about{
             display: flex;
             color: rgb(117, 117, 117);
@@ -93,16 +105,8 @@
             margin-left:1rem;
             margin-top: 10px;
         }
-        .button1{
-            background-color: black;
-            color: azure;
-            height: 30px;
-            width: 100px;
-        }
-        .button1:hover{
-            color: rgb(255, 255, 255);
-            background-color: chocolate;
-        }
+       
+        
         .button2{
             background-color: black;
             color: azure;
@@ -114,9 +118,10 @@
             color: rgb(236, 236, 236);
             background-color: chocolate;
         }
-        .fa-solid{
-            justify-content: center;
-        }
+
+
+                                 /* gallery */
+
         .grid-container2{
             display: grid;
             grid-template-columns:auto auto auto;
@@ -142,67 +147,81 @@
             background-color: chocolate;
             
         }
-         .grid-container3{
-            display:flex;
-            grid-template-columns: auto auto auto;
-            gap: 30px;
-            font-style: italic;
-             display:flex;
-            justify-content: center;
-            
-        } 
-       .grid-container3 img{
-        width: 30px;
-        height:30px ;
-        margin-top: 40px;
-       }
-        
-        .services1{
-            width:300px ;
-            height: 400px;
-            text-align: center;  
-        padding: 20px;
-        border-radius: 10px; 
 
-        }
-        .services1 :hover{
-            transform: scale(1.08);
-            box-shadow: 0 15px 30px rgba(0,0 0,0,0.15 );
-            z-index: 1;
-            padding-bottom: 35px;
-            margin-bottom:20px ;
-        }
-            .icon1{ 
-            width: 300px;
-             height:250px;
-             border-radius:10px;
-             align-items: center;
-            margin: 0 auto;
-              background-color:chocolate;
-           color: azure;
-            
 
+                                  /* SERVICES */
+        .grid-container3 {
+          display: flex;
+         flex-wrap: wrap;
+       justify-content: center;
+         gap: 30px;
+         font-style: italic;
              }
-             .icon2{
-                 width:300px;
-             height:250px;
-             border-radius:10px;
-             align-items: center;
-            margin: 0 auto;
-              background-color:chocolate;
-           color: azure;
-            
-             }
-            .icon3{
-                 width: 300px;
-             height:250px;
-             border-radius:10px;
-             align-items: center;
-            margin: 0 auto;
-              background-color:chocolate;
-           color: azure;
-             }
-             /* testmonial */
+
+
+         .grid-container3 img {
+           width: 60px;
+           height: 60px;
+            margin-top: 20px;
+           }
+
+
+          .services1 {
+             width: 300px;
+             height: auto;
+          text-align: center;
+          padding: 20px;
+          border-radius: 10px;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+}
+
+
+.icon1 {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 10px;
+  background-color: chocolate;
+  color: azure;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* On hover: icon box slightly scales */
+.icon1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.read-more-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #6b4f3b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+
+.icon1:hover .read-more-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.read-more-btn:hover {
+  background-color: #4a3525;
+}
+       
+
+            /* testmonial */
 
              .Testimonial-card{
                display: grid;
@@ -212,6 +231,7 @@
                linear-gradient(to right top, black 25%, transparent 25%, transparent 75%, black 75%) 1;
               border-image-slice: 1;
   }
+  
 
       .quote-icon{
         font-size:60px;
@@ -225,6 +245,8 @@
       /* .button5{
         height: 100px;
       } */
+
+                                          /* footer*/
     .footer  { 
         
       background-color: #333;
@@ -255,11 +277,5 @@
         flex: 1;
         min-width: 250px;
     }
-    .read-more-btn{
-        position: absolute;
-        bottom: -40px;
-        left: 50px;
-        transform: translate X(-50px);
-        padding: 10px 25px;
-    }
-    
+  
+
